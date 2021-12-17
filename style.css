@@ -1,0 +1,432 @@
+/*Lokavya Jain*/ 
+/*Personal Website CSS Design*/
+/*Created on: Nov. 11, 2021*/
+/*Last Edited on: Nov. 19 2021*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(100, 49, 49, 0.2),rgba(0, 0, 0, 0.2)), url(images/antelope_canyon_landing_page_bg.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo img{
+    padding: 10px;
+    float:right;
+    align-items: right;
+    width: 300px;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px 3px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 7px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+}
+
+.nav-links ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+.homepage_intro{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.homepage_intro h1{
+    font-size: 70px;
+}
+
+.homepage_intro p{
+    margin: 10px 0 40px;
+    font-size: 14;
+}
+
+.homepage_intro a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 17px;
+    transition: 0.5s ease;
+    border-radius: 2px;
+}
+
+.homepage_intro a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Screen 2 */
+.screentwo{
+    margin: 20px auto;
+    margin-top: 9%;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/landing_page_background.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 75px 0; /*this is the height of the image*/
+}
+.screentwo h1{
+    text-align: center;
+    font-size: 90px;
+    color: #fff;
+}
+.screentwo a{
+    font-size: 30px;
+    color: white;
+    padding: 6px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+.screentwo a:hover{
+    transition: 0.5s;
+    background-color:white;
+    color: black;
+}
+
+.screentwo p1{
+    font-size: 30px;
+    color: #fff;
+}
+
+.bloggridtop{
+    width: 80%;
+    display: flex;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.blogboxone{
+    flex: 1;
+    background: rgb(231, 255, 231);
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.blogboxone p1{
+    font-size: 25px;
+    padding-top: 55px;
+    padding-right: 28px;
+    display: inline-block;
+    color: #000; 
+}
+.blogboxoneimage img{
+    width: 35%;
+    float: left;
+    padding-left: 6px;
+    margin: 10px;
+    margin-top:15px;
+    margin-bottom: 18px;
+}
+.blogboxone:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+
+
+.bloggridbottom{
+    width: 80%;
+    display: flex;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+.blogboxtwo{
+    flex: 1;
+    background: rgb(231, 250, 255);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin-right: 10px;
+    margin-left: 10px;  
+}
+.blogboxtwo p1{
+    font-size: 25px;
+    padding-top: 58px;
+    padding-right: 23px;
+    display: inline-block;
+    color: #000; 
+}
+.blogboxtwoimage img{
+    width: 40%;
+    float: left;
+    margin: 10px;
+    margin-left: 20px;
+    margin-top:30px;
+    margin-bottom: 18px;
+    margin-right: 6px;
+}
+.blogboxtwo:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+
+.blogboxthree{
+    flex: 1;
+    background: rgb(255, 231, 231);
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;  
+}
+.blogboxthree p1{
+    font-size: 25px;
+    padding-top: 27px;
+    padding-right: 30px;
+    display: inline-block;
+    color: #000; 
+}
+.blogboxthreeimage img{
+    width: 40%;
+    float: left;
+    margin: 10px;
+    margin-top:15px;
+    margin-bottom: 18px;
+}
+.blogboxthree:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+
+
+.bloggridbottom{
+    width: 80%;
+    display: flex;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.blogboxfour{
+    flex: 1;
+    background: rgb(255, 231, 255);
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;  
+}
+.blogboxfour p1{
+    font-size: 25px;
+    padding-top: 53px;
+    padding-right: 30px;
+    display: inline-block;
+    color: #000; 
+}
+.blogboxfourimage img{
+    width: 37%;
+    float: left;
+    margin: 10px;
+    margin-top:25px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+}
+.blogboxfour:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+
+
+.blogboxfive{
+    flex: 1;
+    background: rgb(253, 255, 231);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin-right: 10px;
+    margin-left: 10px;  
+}
+.blogboxfive p1{
+    font-size: 25px;
+    padding-top: 50px;
+    padding-right: 23px;
+    display: inline-block;
+    color: #000; 
+}
+.blogboxfiveimage img{
+    width: 40%;
+    float: left;
+    margin: 10px;
+    margin-top:15px;
+    margin-bottom: 18px;
+    margin-right: 6px;
+}
+.blogboxfive:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+.blogboxsix{
+    flex: 1;
+    background: rgb(233, 231, 255);
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin-left: 10px;  
+}
+.blogboxsix p1{
+    align-self: center;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-right: 23px;
+    padding-left: 8px; 
+    
+    display: inline-block;
+    color: #000; 
+}
+.blogboxsiximage img{
+    width: 34%;
+    float: left;
+    margin: 10px;
+    margin-top:18px;
+    margin-bottom: 15px;
+    margin-right: 6px;
+    margin-left: 25px;
+}
+.blogboxsix:hover{
+    transition: 0.5s ease;
+    background:#fff;
+    transition: 0.5s ease;
+}
+
+
+/* Screen 3  */
+.screenthree{
+    flex:1;
+    background-color: black;
+    padding-top: 75px;
+    height: 575px;
+    font-family:'Courier New', Courier, monospace;
+}
+.screenthree h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(12, 199, 43);
+    margin-bottom: 50px;
+}
+.screenthree p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    color: white;
+}
+
+/* Screen 4 (contact page) */
+.overallcontactflex{
+    width: 95%;
+    display: flex;
+    background: white;
+    margin: 0 auto;
+    margin-top: 2.5%;
+}
+.leftside{
+    flex: 1;
+    height: 400px;
+    line-height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/contactpagebackground.JPG);
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-right: 1.25%;
+    text-align: center;
+}
+.leftside h1{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    vertical-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.rightside{
+    flex: 1;
+    background-color: black; /*This is just temporary. Change it to white */
+    border-radius: 10px;
+    margin-left: 1.25%;
+}
+.rightside h1{
+    color: white;
+}
+
+/* {.bloggridbottom{
+    width: 80%;
+    display: flex;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 120px;} */
+
+.homepageendcard{
+    margin-top: 3%;
+    display: inline block;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    height: 100px;
+    line-height: 100px; 
+}
+.homepageendcard p1{
+    color: rgba(255, 255, 255, 0.459);
+    margin-top: 1%;
+}
