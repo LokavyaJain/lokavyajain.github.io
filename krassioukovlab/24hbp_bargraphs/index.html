@@ -57,14 +57,13 @@
   <p>   - Each metric will have two graphs associated with it.</p>
   <p>   - Hover over points on the first graph to display participant info.</p>
   <p>   - Click and drag on the graph to zoom in.</p>
-  <p>   - p-values were calculated with paired t-tests unless otherwise specified.</p>
+  <p>   - p-values were calculated with one of 4 tests based on the conditions</p>
   <p>   - Interactive histograms for this data can be found at this URL: lokavyajain.github.io/krassioukovlab/24hbp_histograms</p>
   <p></p>
-
   <div class="graph-section">
   <h2>Mean_SBP</h2>
-  <p>P-Value: 0.465279</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.4982325030</p>
+  <p>P-Value: 0.465279 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="Mean_SBP_plotly.html"></iframe>
       <img src="Mean_SBP_seaborn.png" />
@@ -73,8 +72,8 @@
 
   <div class="graph-section">
   <h2>Mean_DBP</h2>
-  <p>P-Value: 0.746767</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.7896760880</p>
+  <p>P-Value: 0.746767 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="Mean_DBP_plotly.html"></iframe>
       <img src="Mean_DBP_seaborn.png" />
@@ -83,8 +82,8 @@
 
   <div class="graph-section">
   <h2>Mean_HR</h2>
-  <p>P-Value: 0.517412</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.6233283790</p>
+  <p>P-Value: 0.517412 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="Mean_HR_plotly.html"></iframe>
       <img src="Mean_HR_seaborn.png" />
@@ -93,18 +92,19 @@
 
   <div class="graph-section">
   <h2>Number_of_Daytime_AD_Events</h2>
-  <p>P-Value: 0.484144</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0003062950</p>
+  <p>P-Value: 0.3453 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Daytime_AD_Events_plotly.html"></iframe>
       <img src="Number_of_Daytime_AD_Events_seaborn.png" />
   </div>
   </div>
 
+
   <div class="graph-section">
   <h2>Number_of_Nighttime_AD_Events</h2>
-  <p>P-Value: 0.389871</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000067140</p>
+  <p>P-Value: 0.371306 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Nighttime_AD_Events_plotly.html"></iframe>
       <img src="Number_of_Nighttime_AD_Events_seaborn.png" />
@@ -113,18 +113,19 @@
 
   <div class="graph-section">
   <h2>Number_of_Daytime_OH_Events</h2>
-  <p>P-Value: 0.779711</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000671960</p>
+  <p>P-Value: 0.968688 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Daytime_OH_Events_plotly.html"></iframe>
       <img src="Number_of_Daytime_OH_Events_seaborn.png" />
   </div>
   </div>
 
+
   <div class="graph-section">
   <h2>Number_of_Nighttime_OH_Events</h2>
-  <p>P-Value: 0.549271</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000083010</p>
+  <p>P-Value: 0.115116 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Nighttime_OH_Events_plotly.html"></iframe>
       <img src="Number_of_Nighttime_OH_Events_seaborn.png" />
@@ -133,18 +134,19 @@
 
   <div class="graph-section">
   <h2>Number_of__Total_AD_and_Daytime_OH_Events</h2>
-  <p>P-Value: 0.635972</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0078062000</p>
+  <p>P-Value: 0.624171 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of__Total_AD_and_Daytime_OH_Events_plotly.html"></iframe>
       <img src="Number_of__Total_AD_and_Daytime_OH_Events_seaborn.png" />
   </div>
   </div>
 
+
   <div class="graph-section">
   <h2>24Hr_SBP_CV</h2>
-  <p>P-Value: 0.136954</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.8515959130</p>
+  <p>P-Value: 0.136954 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="24Hr_SBP_CV_plotly.html"></iframe>
       <img src="24Hr_SBP_CV_seaborn.png" />
@@ -153,8 +155,8 @@
 
   <div class="graph-section">
   <h2>Avg_SBP_Increase_During_Nighttime_AD</h2>
-  <p>P-Value: 0.652621 (Not Paired Due to Missing Values)</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.7089260460</p>
+  <p>P-Value: 0.652621 (Unpaired t-test Due to Missing Values)</p>
   <div class="graph-pair">
       <iframe src="Avg_SBP_Increase_During_Nighttime_AD_plotly.html"></iframe>
       <img src="Avg_SBP_Increase_During_Nighttime_AD_seaborn.png" />
@@ -163,8 +165,8 @@
 
   <div class="graph-section">
   <h2>Avg_SBP_Increase_During_Nighttime_AD.1</h2>
-  <p>P-Value: 0.391743</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0729246400</p>
+  <p>P-Value: 0.391743 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="Avg_SBP_Increase_During_Nighttime_AD.1_plotly.html"></iframe>
       <img src="Avg_SBP_Increase_During_Nighttime_AD.1_seaborn.png" />
@@ -173,8 +175,8 @@
 
   <div class="graph-section">
   <h2>Avg_SBP_Drop_During_Daytime_OH</h2>
-  <p>P-Value: 0.7937 (Not Paired Due to Missing Values)</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0003951820</p>
+  <p>P-Value: 0.978299 (Mann-Whitney U-test Due to Non-normal Data and Missing Values)</p>
   <div class="graph-pair">
       <iframe src="Avg_SBP_Drop_During_Daytime_OH_plotly.html"></iframe>
       <img src="Avg_SBP_Drop_During_Daytime_OH_seaborn.png" />
@@ -183,8 +185,8 @@
 
   <div class="graph-section">
   <h2>Avg_DBP_Drop_During_Daytime_OH</h2>
-  <p>P-Value: 0.338497 (Not Paired Due to Missing Values)</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000006990</p>
+  <p>P-Value: 0.934923 (Mann-Whitney U-test Due to Non-normal Data and Missing Values)</p>
   <div class="graph-pair">
       <iframe src="Avg_DBP_Drop_During_Daytime_OH_plotly.html"></iframe>
       <img src="Avg_DBP_Drop_During_Daytime_OH_seaborn.png" />
@@ -193,8 +195,8 @@
 
   <div class="graph-section">
   <h2>Number_of_Recordings_With_SBP_>=_150mmHg</h2>
-  <p>P-Value: 0.569958</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000055650</p>
+  <p>P-Value: 0.683091 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Recordings_With_SBP_>=_150mmHg_plotly.html"></iframe>
       <img src="Number_of_Recordings_With_SBP_>=_150mmHg_seaborn.png" />
@@ -203,8 +205,8 @@
 
   <div class="graph-section">
   <h2>Number_of_Recordings_With_SBP_>=_180mmHg</h2>
-  <p>P-Value: 0.845721 (Not Paired Due to Missing Values)</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0000005550</p>
+  <p>P-Value: 0.808837 (Mann-Whitney U-test Due to Non-normal Data and Missing Values)</p>
   <div class="graph-pair">
       <iframe src="Number_of_Recordings_With_SBP_>=_180mmHg_plotly.html"></iframe>
       <img src="Number_of_Recordings_With_SBP_>=_180mmHg_seaborn.png" />
@@ -213,8 +215,8 @@
 
   <div class="graph-section">
   <h2>SBP_Nocturnal_Dip_(percentage)</h2>
-  <p>P-Value: 0.135376</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.3207635380</p>
+  <p>P-Value: 0.135376 (Paired t-test)</p>
   <div class="graph-pair">
       <iframe src="SBP_Nocturnal_Dip_(percentage)_plotly.html"></iframe>
       <img src="SBP_Nocturnal_Dip_(percentage)_seaborn.png" />
@@ -223,14 +225,14 @@
 
   <div class="graph-section">
   <h2>DBP_Nocturnal_Dip_(percentage)</h2>
-  <p>P-Value: 0.285029</p>
   <p>Shapiro-Wilk Test with Pre and Post Combined: 0.0167860830</p>
+  <p>P-Value: 0.760864 (Wilcoxon Test due to Non-normal Data)</p>
   <div class="graph-pair">
       <iframe src="DBP_Nocturnal_Dip_(percentage)_plotly.html"></iframe>
       <img src="DBP_Nocturnal_Dip_(percentage)_seaborn.png" />
   </div>
   </div>
-  
+
 
   </div>
 
