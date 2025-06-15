@@ -1,1 +1,16 @@
-﻿Category,Task,Start,Finish,Project,,,MilestoneDescription,MilestoneDate,MilestoneCategory,MilestoneProject
+﻿Category,Task,Start,Finish,Project,,,Deadline Description,Deadline Date,Deadline Category,Deadline Project,,README
+Data Collection & Entry,Writing bristol stool charts to CSV and compiling past data to same format,2025-06-02,2025-06-02,WGTT,,,WGTT Initial Presentation,2025-06-09,Meetings & Presentations,WGTT,,Sample categories 
+Writing & Validating Algorithms,Algorithm to quantify string date entries,2025-06-03,2025-06-04,WGTT,,,24h Blood Pressure Presentation,2025-06-16,Meetings & Presentations,24hBP,,Writing & Validating Algorithms
+Visualizing Data,Plotting graphs for the particpants,2025-06-05,2025-06-05,WGTT,,,,,,,,Visualizing Data
+Meetings & Presentations,Preparing presentation for lab meeting ,2025-06-06,2025-06-08,WGTT,,,,,,,,Data Collection & Entry 
+Writing & Validating Algorithms,Writing algorithm to sort based on statistical tests,2025-06-08,2025-06-09,24hBP,,,,,,,,Meetings & Presentations
+Visualizing Data,Visualizing all graphs to display differences in mean ,2025-06-09,2025-06-10,24hBP,,,,,,,,Animal Care
+Meetings & Presentations,Preparing presentation for lab meeting and becoming familiar with literature,2025-06-11,2025-06-12,24hBP,,,,,,,,Manuscripts
+Visualizing Data,Writing code and algorithms to display a timeline for weekly updates ,2025-06-13,2025-06-14,Weekly Updates,,,,,,,,
+,,,,,,,,,,,,*Milestones can be viewed as deadlines
+,,,,,,,,,,,,
+,,,,,,,,,,,,Project Categories: 
+,,,,,,,,,,,,24hBP
+,,,,,,,,,,,,WGTT
+,,,,,,,,,,,,Rat Rectal Pressure
+,,,,,,,,,,,,Weekly Updates

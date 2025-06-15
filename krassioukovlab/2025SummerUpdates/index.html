@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>24 Hour Blood Pressure</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
+    }
+    .graph-section {
+      margin-top: 3em;
+    }
+
+    .written-section{
+     display: flex;
+     gap: 1em;
+     flex-wrap: wrap;
+     flex: 1 1 90%; 
+     object-fit: contain;
+     border: 1px solid #ccc;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .graph-pair {
+     display: flex;
+     gap: 1em;
+     flex-wrap: wrap;
+     align-items: flex-start; /* align tops of the image and iframe */
+    }
+
+    .graph-pair iframe {
+     flex: 1 1 90%;         /* Take up about half the width */
+     min-width: 300px;      /* Ensures they don’t get squished too small */
+     height: 500px;         /* Makes the image match the iframe height */
+     border: 1px solid #ccc;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+     object-fit: contain;   /* Keeps the image nicely scaled */
+     
+     }
+
+  </style>
+</head>
+<body>
+
+  <h1>Weekly Updates and Timeline</h1>
+  <p>Created by Lokavya Jain on June 14th, 2025</p>
+  <p>This webpage will display a timeline, followed by a series of weekly updates.</p>
+ 
+  <p></p>
+
+  <div class="graph-section">
+  <h2>Interactive Timeline:</h2>
+  <div class="graph-pair">
+      <iframe src="HTMLTimeline.html"></iframe>
+  </div>
+
+  <p></p>
+
+  <h3>June 8th - June 14th Update</h3>
+  <p>This week my main focus was preparing a presentation for the 24 hour blood pressure monitor data to share at the upcoming lab meeting.
+    I was expecting to focus on the FFT algorithm this week but I prioritized this over that. To prepare for the presentation, 
+    I had to rewrite some of the code for the graphs so that they display the mean differences. I also spent some time reading through a study 
+    Mohamed shared with me to try to better understand what each metric represented, because up until this point I was just plotting the data 
+    without a thorough conceptual understanding of what I was plotting (I still don't feel like an 'expert' on the topic but I have a better idea 
+    of what's going on). I also spent some time setting up these weekly updates, which involved writing scripts for the timeline, getting an HTML 
+    page ready and pushing the script to the github repository. 
+  </p>
+  </div>
+
+
+  <h3>June 1st - June 7th Update</h3>
+  <p>This week I was working on the rewritten FFT algorithm and a WGTT presentation (which I didn't end up formally presenting after consulting with Mohamed
+    because there wasn't enough data to make reliable conclusions). </p>
+  <p>For the FFT algorithm, I had to rebuild it to become modular (consisting of lots of functions that are all called at the end of the script) instead 
+    of linear (just going through each step linearly outside a function). The reason was that debugging was becoming extremely difficult in the linear 
+    build because of the nature of global and local variables in python. Essentially, code written to clean/sort/parse data for the non-stim dataset would 
+    interfere with those processes for the stim dataset and vice-versa, and fixes for one would end up creating more problems for the other. An advantage of 
+    the new code is that I was able to build some more control into the parameters, namely the FFT range being considered for the area, and the number of bins 
+    that is divided into (in other words, we're not limited to 5 bins ranging from 0 to 0.5, and its much easier to change those parameters into whatever we want).  
+  </p>
+  <p>For the WGTT data, I spent some time entering the data I could find in the particpant folders onto a spreadsheet. I also entered data from previous 
+    control measurements onto the spreadsheet with a modified format that would work better with python's datetime objects. I then visualized the data and put together 
+    the final presentation. I also realized during this process that I should 
+    use excel instead of python for data like this since there are only a few data points. It would've probably been faster to go through the data manually 
+    instead of writing scripts to parse through and make calculations listwise. As mentioned earlier, I didn't end up presenting because there was only 
+    data from 3 participants and Mohamed advised that there's not much point in presenting unreliable data. So I have discussed with Andrea and we will 
+    work on getting the data for the 2 remaining participants. 
+  </p>
+  </div>
+
+  </div>
+
+
+
