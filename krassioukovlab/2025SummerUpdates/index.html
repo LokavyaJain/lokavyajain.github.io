@@ -61,9 +61,27 @@
       <iframe src="HTMLTimeline.html"></iframe>
   </div>
 
-  <p></p>
+  <h3>June 15 - June 21 Update</h3>
+  <p>This week I was able to finish up the new FFT algorithm, and produce some spreadsheets. I'm going to do some data exploration/visualization now
+    with those spreadsheets. As mentioned previously, the new algortihm allows for control over the FFT range and the number of bins. I might play with these 
+    numbers and see what we get (I won't be looking for a specific result, but 5 bins at 0.5 is just as arbitrary as any other split so we might as well see 
+    what's produced). This algorithm also identifies peaks, which I will be looking at. 
+    I will also try to port the FFT algorithm skeleton into an algorithm that can calculate area under the graph for the raw traces. It shouldn't 
+    take as long as the FFT algorithm but determining the method of calculating AUG will take some thought. Here are some considerations:
+    <br>
+    1. Should the AUG be calculated as ∆ from a baseline or just raw AUG? <br>
+    2. If it's ∆ from a baseline, how will baseline be determined for the transection animals? What about the stim animals (would it be from the pre-injury baseline
+    or their local baseline right before the stim hits?) <br>
+    3. If it's just raw AUG, will differences be significant enough? <br>
+    I think I'll have to try all of these methods and see what is produced. But it's going to be pretty time-consuming. 
+    <br><br>
+    Apart from that, there were a couple other things I did: I attended an MRPM workshop that had a pretty interesting talk about myelin and MRI scans. That took up 
+    Thursday. I also spent a few hours updating my 24-hour blood pressure presentation to include sort of an education session about AD. I realized that I didn't really 
+    understand AD as well as I should so I spent some time learning about the neurobiology of it. I thought it would be helpful to present for my own understanding and for 
+    others in the lab. Didn't get to present on Monday though (again) due to time constraints. 
+  </p>
 
-  <h3>June 8th - June 14th Update</h3>
+  <h3>June 8 - June 14 Update</h3>
   <p>This week my main focus was preparing a presentation for the 24 hour blood pressure monitor data to share at the upcoming lab meeting.
     I was expecting to focus on the FFT algorithm this week but I prioritized this over that. To prepare for the presentation, 
     I had to rewrite some of the code for the graphs so that they display the mean differences. I also spent some time reading through a study 
