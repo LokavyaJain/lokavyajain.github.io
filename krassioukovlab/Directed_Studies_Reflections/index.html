@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Reflections | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Deep Slate */
+            --accent-color: #3498db;  /* Professional Blue */
+            --bg-color: #fcfcfc;
+            --text-color: #333;
+            --light-text: #666;
+            --card-bg: #ffffff;
+            --border-color: #eee;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header Section */
+        header {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--light-text);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--primary-color);
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Timeline Container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .reflection-section {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        /* The Month Heading */
+        .month-label {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .month-label::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 20px;
+        }
+
+        /* Reflection Card */
+        .card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .card p {
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2f7;
+            color: var(--primary-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+                justify-content: flex-start;
+                padding-left: 20px;
+            }
+            nav a {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semester Reflections</h1>
+        <p class="subtitle">A documented journey of growth, challenges, and milestones from October 2025 to April 2026.</p>
+    </header>
+
+    <nav>
+        <a href="#oct">Oct</a>
+        <a href="#nov">Nov</a>
+        <a href="#dec">Dec</a>
+        <a href="#jan">Jan</a>
+        <a href="#feb">Feb</a>
+        <a href="#mar">Mar</a>
+        <a href="#apr">Apr</a>
+    </nav>
+
+    <div class="container">
+
+
+        <!-- Sept -->
+        <section id="oct" class="reflection-section">
+            <div class="month-label">September</div>
+            <div class="card">
+                <h3>Initial Setup & Orientation</h3>
+                <p>In September, I initiated my directed studies project focusing on ambulatory blood pressure monitoring (ABPM) following spinal cord injury. To build a strong clinical foundation for this work, I conducted a comprehensive review of the neurophysiology underlying cardiovascular dysfunction and autonomic integration. Concurrently, I began preparing and visualizing our exploratory datasets. This process allowed me to develop proficiency in creating interactive figures using Plotly, which significantly streamlined our data exploration pipeline. As this month was primarily dedicated to literature review and establishing analytical workflows, I did not encounter any notable technical or logistical challenges. I also participated in data collection, which taught me a lot about interacting with SCI patients and good clinical practice</p>
+                <span class="tag">Physiology</span>
+            </div>
+        </section>
+
+        <!-- October -->
+        <section id="oct" class="reflection-section">
+            <div class="month-label">October</div>
+            <div class="card">
+                <h3>Rectal Pressure Focus Shift</h3>
+                <p>By October, preliminary analysis of the ABPM data yielded non-significant results, necessitating a pause while we awaited the recruitment of additional participants. I strategically redirected my efforts toward the lab's ongoing rectal pressure and transcutaneous spinal cord stimulation project to maintain forward momentum. To facilitate this new analysis, I completely restructured an existing Fast Fourier Transform (FFT) script. I transitioned the codebase into an object-oriented framework using Python classes, making it highly modular. Furthermore, I optimized the pipeline to process and analyze all stimulation files in a single automated batch. The primary challenge during this period was rapidly familiarizing myself with new pythonic and analytical techniques (analyzing via linear mixed effects models for stats), but establishing robust code ensured a smooth operational transition.</p>
+                <span class="tag">Rectal Pressure Focus</span>
+            </div>
+        </section>
+
+        <!-- November -->
+        <section id="nov" class="reflection-section">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">November</div>
+            <div class="card" style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Rectal Pressure Communication</h3>
+                <p>During November, I presented the automated rectal pressure analysis findings to Soshi, Rahul, and Raza. Disseminating these results provided valuable experience in refining my scientific communication and delivering concise, actionable feedback within a collaborative research environment. Methodologically, I expanded my analytical toolkit by studying the quantification of habituation and exploring how wavelet decomposition could be applied to extract deeper insights from our rectal pressure signals. A significant professional development challenge this month was recognizing the expectation that I must serve as an authoritative voice on the specific literature surrounding my project. This realization has since driven me to engage much more rigorously with published research to ensure I can contribute at the same level as my mentors. Also learned the R language for statistical analysis. </p>
+                <span class="tag" style="font-size: 0.8rem; color: #666; font-style: italic;">Communication and Analysis</span>
+            </div>
+        </section>
+
+        <!-- December -->
+        <section id="dec" style="margin-top: 40px;">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">December</div>
+            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Changing Tools</h3>
+                <p>TAlthough a portion of December was allocated to final examinations and the winter break, I successfully integrated data from our newly completed participants into the ABPM dataset before the term ended. This allowed me to advance the statistical evaluation of the intervention using non-parametric methods, specifically exploring the Wilcoxon signed-rank and Mann-Whitney U tests. Additionally, building upon the coding practices I established in October, I transitioned away from using Jupyter notebooks in favor of developing standalone, modular Python scripts. Balancing exam preparation with these analytical shifts was challenging, but moving away from notebook environments has drastically improved code reproducibility and simplified version control for sharing analytical tools during publication.</p>
+                <span style="font-size: 0.8rem; color: #666; font-style: italic;">Key Outcome: Shifted Workflows</span>
+            </div>
+        </section>
+
+        <!-- January -->
+        <section id="jan" style="margin-top: 40px;">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">January</div>
+            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Continued Progress</h3>
+                <p>In January, my primary focus was on finalizing our MRPM grant submission. This process taught me a great deal about developing novel study ideas and structuring formal research proposals. I took a leadership role during this phase, working closely with Mohamed to ensure the application was completed to a high standard. On the analytical side, I assisted in graphing the WGTT data. When our initial aggregate results did not reach statistical significance, we brainstormed alternative analytical directions. This led me to explore the utility of case series and single-subject designs as a viable path for highlighting meaningful individual physiological responses when group data falls short. Simultaneously, I collaborated with Shane to chart the future trajectory of the ABPM project. I also read literature on blood pressure variability as a sensitive proxy for cardiovascular autonomic control following spinal cord injury.</p>
+            </div>
+        </section>
+
+        <!-- February -->
+        <section id="feb" style="margin-top: 40px;">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">Learning OOP and Planning Rectal Pressure Direction</div>
+            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Analysis & Iteration</h3>
+                <p>While awaiting further developments from Shane on the ABPM front in February, I pivoted back to my computational work for the rectal pressure project. I expanded my technical expertise in signal processing, specifically developing a brand new, custom technique that implements top-hat transformations and Savitzky-Golay filters in Python to better isolate true physiological signals topologically. I wrapped this in an app for optimizing parameters. I paired this coding work with extensive literature review regarding neurogenic bowel dysfunction after SCI, which was essential for making sense of the irregular responses we were observing in the stimulation data. Recognizing the need to consolidate our findings, I began drafting a pre-manuscript report to help transition this project toward formal publication. Beyond the data analysis, I also took proactive initiative in lab management by successfully recruiting, coordinating, and onboarding a new cohort of volunteers to support our ongoing experiments.</p>
+            </div>
+        </section>
+
+        <!-- March -->
+        <section id="mar" style="margin-top: 40px;">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">March</div>
+            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Animal Care</h3>
+                <p>March presented unexpected logistical roadblocks, requiring me to dedicate the majority of my time to hands-on animal care and experimental maintenance. This shift proved to be an invaluable learning experience in practical problem-solving and highlighted the absolute necessity of rigorous consistency in in-vivo models. To keep the broader project on track, I actively managed our volunteer team to ensure steady productivity despite the disruptions. Furthermore, I engaged in several extensive planning sessions with Andrea. These meetings provided substantial professional development, teaching me the operational nuances of organizing and coordinating large, multi-person research initiatives within a highly active laboratory environment.</p>
+            </div>
+        </section>
+
+        <!-- April -->
+        <section id="apr" style="margin-top: 40px;">
+            <div class="month-label" style="font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; display: block;">April</div>
+            <div style="background: white; padding: 20px; border-radius: 8px; border: 1px solid #eee;">
+                <h3 style="margin-top:0">Review & Submission</h3>
+                <p>As the academic term draws to a close in April, I balanced preparation for my final exams with wrapping up my core lab deliverables. I continued refining the pre-manuscript report for the rectal pressure project to ensure the methodology and preliminary findings were thoroughly documented. Concurrently, Shane shared the finalized ABPM manuscript draft with myself and Mohamed. Using those findings, I designed and prepared a poster for INCREASE BC, ensuring our cardiovascular data and cosinor analyses were communicated clearly and effectively. Finally, I compiled all of my progress, scripts, and insights across these various projects into a comprehensive final report for Dr. Krassioukov, successfully concluding a highly productive eight months of directed studies.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; margin: 60px 0 40px; color: #888; font-size: 0.9rem;">
+        &copy; 2026 Student Portfolio | Academic Progress Log
+    </footer>
+</body>
+</html>
